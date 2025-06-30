@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="16dp"
+    android:fitsSystemWindows="true"
+    android:background="@drawable/appbg">
+
+    <!-- Displaying the skin type -->
+    <TextView
+        android:id="@+id/skinTypeText"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Your Skin Type"
+        android:textSize="20sp"
+        android:layout_marginTop="20dp"/>
+
+    <!-- Displaying the recommended treatments -->
+    <TextView
+        android:id="@+id/treatmentText"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Recommended Treatments"
+        android:textSize="18sp"
+        android:layout_marginTop="10dp"/>
+
+    <!-- Button to close the result page -->
+    <Button
+        android:id="@+id/closeButton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Close"
+        android:layout_marginTop="30dp"/>
+</LinearLayout>

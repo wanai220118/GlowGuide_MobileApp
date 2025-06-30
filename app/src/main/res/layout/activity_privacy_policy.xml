@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:fitsSystemWindows="true"
+    android:background="@color/subhead"
+    android:orientation="vertical">
+
+    <!-- Toolbar -->
+    <androidx.appcompat.widget.Toolbar
+        android:id="@+id/toolbar"
+        android:layout_width="match_parent"
+        android:layout_height="?attr/actionBarSize"
+        android:background="@color/nav_bar_translucent"
+        app:title="Privacy Policy"
+        android:titleTextColor="@color/colorPrimary"
+        app:navigationIcon="@drawable/back_arrow" />
+
+    <!-- Scrollable content -->
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:padding="20dp">
+
+        <LinearLayout
+            android:orientation="vertical"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <TextView
+                android:id="@+id/privacyContent"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textSize="14sp"
+                android:lineSpacingExtra="6dp"
+                android:textColor="#444"
+                android:text="GlowGuide respects your privacy. This Privacy Policy explains how we collect, use, and protect your personal information when you use our app.\n\n1. Information Collection\nWe collect personal data such as your name, email address, skin condition preferences, and consultation history to personalize your experience.\n\n2. Use of Information\nYour data is used to provide skincare routines, track progress, recommend products, and book consultations.\n\n3. Data Storage\nAll user data is securely stored in Firebase, and only authorized staff can access consultation data.\n\n4. Sharing\nWe do not sell or share your data with third parties. Data may be shared with clinic professionals for your treatment needs only.\n\n5. Security\nGlowGuide uses secure authentication and encrypted communication to protect your personal data.\n\n6. Your Rights\nYou have the right to update or delete your personal data at any time through the profile settings or by contacting support.\n\n7. Updates\nThis policy may be updated occasionally. You will be notified of any significant changes.\n\nIf you have any questions about our privacy policy, please contact support@glowguide.app." />
+        </LinearLayout>
+    </ScrollView>
+</LinearLayout>

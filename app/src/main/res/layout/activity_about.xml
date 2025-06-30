@@ -1,0 +1,69 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:fitsSystemWindows="true">
+
+    <!-- Toolbar -->
+    <androidx.appcompat.widget.Toolbar
+        android:id="@+id/toolbar"
+        android:layout_width="match_parent"
+        android:layout_height="?attr/actionBarSize"
+        android:background="@color/nav_bar_translucent"
+        app:title="About Us"
+        android:titleTextColor="@color/colorPrimary"
+        app:navigationIcon="@drawable/back_arrow" />
+
+    <!-- Content -->
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:padding="20dp"
+        android:background="@color/subhead">
+
+        <LinearLayout
+            android:orientation="vertical"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center_horizontal">
+
+            <!-- Logo -->
+            <ImageView
+                android:layout_width="300dp"
+                android:layout_height="120dp"
+                android:src="@drawable/header"
+                android:contentDescription="GlowGuide Logo"
+                android:layout_marginBottom="16dp" />
+
+            <!-- Description -->
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textSize="14sp"
+                android:lineSpacingExtra="6dp"
+                android:textColor="#444"
+                android:text="GlowGuide is your personalized skincare companion.\n\nIt helps you understand your skin better, suggests treatments based on your skin type, and keeps your skincare routine on track with smart reminders and consultations.\n\nWhether you have oily, dry, sensitive, or combination skin, GlowGuide recommends routines and products that suit your needs.\n\nOur mission is to make skincare guidance accessible, efficient, and personalized — all in one app."
+                android:layout_marginBottom="24dp" />
+
+            <!-- Version -->
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Version 1.0.0"
+                android:textStyle="bold"
+                android:textColor="#666666"
+                android:layout_marginBottom="8dp" />
+
+            <!-- Contact Us -->
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Contact us: support@glowguide.app"
+                android:textColor="@color/colorPrimary"
+                android:autoLink="email" />
+        </LinearLayout>
+    </ScrollView>
+</LinearLayout>

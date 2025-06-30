@@ -1,0 +1,95 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="horizontal"
+    android:padding="5dp"
+    android:layout_marginTop="30dp"
+    android:background="@color/white"
+    android:fitsSystemWindows="true">
+
+    <CheckBox
+        android:id="@+id/cartItemCheckbox"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_vertical" />
+
+    <RelativeLayout
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_weight="1"
+        android:layout_marginStart="10dp">
+
+        <!-- Delete button at top-right -->
+        <Button
+            android:id="@+id/btnDelete"
+            android:layout_width="20dp"
+            android:layout_height="20dp"
+            android:background="@drawable/delete"
+            android:layout_alignParentTop="true"
+            android:layout_alignParentEnd="true" />
+
+        <!-- Product Name -->
+        <TextView
+            android:id="@+id/cartItemName"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textStyle="bold"
+            android:textSize="16sp"
+            android:layout_alignParentStart="true"
+            android:layout_toStartOf="@id/btnDelete"
+            android:layout_alignTop="@id/btnDelete"
+            android:layout_marginEnd="8dp" />
+
+        <!-- Product Description -->
+        <TextView
+            android:id="@+id/cartItemDesc"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="14sp"
+            android:textColor="#555555"
+            android:layout_below="@id/cartItemName"
+            android:layout_alignParentStart="true" />
+
+        <!-- Product Price -->
+        <TextView
+            android:id="@+id/cartItemPrice"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="15sp"
+            android:textColor="#000000"
+            android:layout_marginTop="4dp"
+            android:layout_below="@id/cartItemDesc"
+            android:layout_alignParentStart="true" />
+
+        <!-- Quantity Controls -->
+        <LinearLayout
+            android:orientation="horizontal"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/cartItemPrice"
+            android:layout_alignParentStart="true"
+            android:layout_marginTop="4dp">
+
+            <Button
+                android:id="@+id/btnDecrease"
+                android:text="−"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" />
+
+            <TextView
+                android:id="@+id/tvQuantity"
+                android:text="1"
+                android:layout_width="40dp"
+                android:layout_height="wrap_content"
+                android:gravity="center" />
+
+            <Button
+                android:id="@+id/btnIncrease"
+                android:text="+"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" />
+        </LinearLayout>
+
+    </RelativeLayout>
+</LinearLayout>

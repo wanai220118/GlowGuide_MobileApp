@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <!-- Base Colors -->
+    <color name="purple_200">#FFBB86FC</color>
+    <color name="purple_500">#FF6200EE</color>
+    <color name="purple_700">#FF3700B3</color>
+    <color name="teal_200">#FF03DAC5</color>
+    <color name="teal_700">#FF018786</color>
+    <color name="black">#FF000000</color>
+    <color name="white">#FFFFFFFF</color>
+    <color name="red">#FF0000</color>
+
+    <!-- Brand Colors -->
+    <color name="colorPrimary">#522B5B</color>
+    <color name="colorPrimaryDark">#190019</color>
+    <color name="colorSecondary">#854F6C</color>
+    <color name="colorAccent">#DFB6B2</color>
+
+    <!-- UI Backgrounds -->
+    <color name="colorBackground">#dac9e5</color>
+
+    <!-- Text Colors -->
+    <color name="colorHeadingText">#2B124C</color>
+    <color name="colorWhite">#FFFFFF</color>
+
+    <!-- 🎨 Primary Colors -->
+    <color name="btn">#d368db</color> <!-- For Main Titles / Buttons / Active Tab -->
+    <color name="subhead">#dac9e5</color> <!-- For Subheadings / UI Highlights -->
+    <color name="names">#bda7da</color> <!-- For Product Names / Inactive Tabs -->
+    <color name="description">#c7bbe4</color> <!-- For Descriptions / Secondary Text -->
+    <color name="petal_frost">#e6d9eb</color> <!-- For Backgrounds / Cards -->
+
+    <!-- 🌈 Transparent Variants -->
+    <color name="berry_pop_80">#CC68DB</color> <!-- 80% opacity of Berry Pop -->
+    <color name="nav_bar_translucent">#DADAE5E6</color> <!-- Slightly see-through nav bar -->
+
+</resources>

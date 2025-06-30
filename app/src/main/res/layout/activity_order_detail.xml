@@ -1,0 +1,140 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="16dp"
+    android:background="@color/colorBackground"
+    android:fitsSystemWindows="true">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:paddingBottom="24dp">
+
+        <!-- Card: Order Summary -->
+        <androidx.cardview.widget.CardView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="16dp"
+            app:cardElevation="4dp"
+            app:cardCornerRadius="16dp">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:padding="16dp">
+
+                <!-- Title -->
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Order Summary"
+                    android:textSize="20sp"
+                    android:textStyle="bold"
+                    android:textColor="#000000"
+                    android:layout_marginBottom="12dp" />
+
+                <!-- Status -->
+                <TextView
+                    android:id="@+id/tvStatus"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Status: To Ship"
+                    android:textSize="16sp"
+                    android:textColor="#444444"
+                    android:layout_marginBottom="4dp" />
+
+                <!-- Total -->
+                <TextView
+                    android:id="@+id/tvTotal"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Total: RM 99.00"
+                    android:textSize="16sp"
+                    android:textColor="#444444"
+                    android:layout_marginBottom="4dp" />
+
+                <!-- Items -->
+                <TextView
+                    android:id="@+id/tvItemList"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Items: 2x Facial Cleanser, 1x Toner"
+                    android:textSize="16sp"
+                    android:textColor="#444444"
+                    android:layout_marginBottom="4dp" />
+            </LinearLayout>
+        </androidx.cardview.widget.CardView>
+
+        <!-- Card: Order Details -->
+        <androidx.cardview.widget.CardView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            app:cardElevation="4dp"
+            app:cardCornerRadius="16dp">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:padding="16dp">
+
+                <!-- Title -->
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Order Details"
+                    android:textSize="20sp"
+                    android:textStyle="bold"
+                    android:textColor="#000000"
+                    android:layout_marginBottom="12dp" />
+
+                <!-- Order ID -->
+                <TextView
+                    android:id="@+id/tvOrderId"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Order ID: #ORD123456"
+                    android:textSize="16sp"
+                    android:textColor="#444444"
+                    android:layout_marginBottom="4dp" />
+
+                <!-- Order Date -->
+                <TextView
+                    android:id="@+id/tvOrderDate"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Order Date: 24 June 2025"
+                    android:textSize="16sp"
+                    android:textColor="#444444"
+                    android:layout_marginBottom="4dp" />
+
+                <!-- Payment Method -->
+                <TextView
+                    android:id="@+id/tvPaymentMethod"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Payment Method: Cash on Delivery"
+                    android:textSize="16sp"
+                    android:textColor="#444444"
+                    android:layout_marginBottom="4dp" />
+
+                <!-- Cancel Reason (hidden by default) -->
+                <TextView
+                    android:id="@+id/tvCancelReason"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Reason for Cancellation: Out of stock"
+                    android:textStyle="italic"
+                    android:textColor="@color/design_default_color_error"
+                    android:textSize="16sp"
+                    android:visibility="gone"
+                    android:layout_marginTop="8dp" />
+            </LinearLayout>
+        </androidx.cardview.widget.CardView>
+
+    </LinearLayout>
+</ScrollView>

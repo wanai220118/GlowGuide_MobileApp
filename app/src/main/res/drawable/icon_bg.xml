@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- res/drawable/circle_shape.xml -->
+<shape xmlns:android="http://schemas.android.com/apk/res/android">
+    <solid android:color="@color/nav_bar_translucent" /> <!-- Background color -->
+    <size android:width="512px" android:height="512px" /> <!-- Size of the circle -->
+    <corners android:radius="256px" /> <!-- Radius to make it a perfect circle -->
+</shape>

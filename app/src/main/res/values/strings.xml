@@ -1,0 +1,38 @@
+<resources>
+    <string name="app_name">GlowGuide</string>
+
+    <string name="first_slide">Discover Personalized Skincare</string>
+    <string name="second_slide">Get Expert Guidance</string>
+    <string name="third_slide">Know Your Skin</string>
+
+    <string name="description1">Browse through a wide range of skincare products carefully selected to match your skin concerns, preferences, and daily routine.</string>
+    <string name="description2">Receive professional skincare consultations from trusted experts who will guide you toward achieving healthier, glowing skin with the right treatments.</string>
+    <string name="description3">Take a short yet insightful quiz designed to analyze your skin type, so you can begin your skincare journey with confidence and clarity.</string>
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="home">Home</string>
+    <string name="shop">Shop</string>
+    <string name="track">Track</string>
+    <string name="my_profile">My Profile</string>
+
+    <string name="fab_add">Add</string>
+
+    <!-- Question 4 answers -->
+    <string name="question4_answerA">Small and barely noticeable</string>
+    <string name="question4_answerB">Very small or hard to see</string>
+    <string name="question4_answerC">Large and visible, especially on the nose and cheeks</string>
+    <string name="question4_answerD">Large in the T-zone, small on the cheeks</string>
+    <string name="question4_answerE">May be visible but often accompanied by redness or bumps</string>
+
+    <string name="next_button_text">Next</string>
+
+    <string name="gender">Select Gender</string>
+    <string-array name="gender_array">
+        <item>Select Gender</item>
+        <item>Male</item>
+        <item>Female</item>
+        <item>Other</item>
+    </string-array>
+
+
+</resources>

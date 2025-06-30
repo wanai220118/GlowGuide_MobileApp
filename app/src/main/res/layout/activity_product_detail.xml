@@ -1,0 +1,128 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/appbg"
+    android:fitsSystemWindows="true">
+
+    <!-- Toolbar -->
+    <androidx.appcompat.widget.Toolbar
+        android:id="@+id/toolbar"
+        android:layout_width="match_parent"
+        android:layout_height="?attr/actionBarSize"
+        android:background="@color/subhead"
+        app:title="Product Description"
+        app:titleTextColor="@color/colorPrimary"
+        android:theme="@style/ThemeOverlay.AppCompat.Dark.ActionBar" />
+
+    <!-- Scrollable Content -->
+    <ScrollView
+        android:id="@+id/scrollView"
+        android:layout_below="@id/toolbar"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_above="@+id/fabCart"
+        android:padding="16dp">
+
+        <LinearLayout
+            android:orientation="vertical"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <!-- Product Image -->
+            <ImageView
+                android:id="@+id/productImage"
+                android:layout_width="match_parent"
+                android:layout_height="250dp"
+                android:scaleType="centerCrop"
+                android:background="@drawable/placeholder_image"
+                android:layout_marginBottom="16dp" />
+
+            <!-- Name -->
+            <TextView
+                android:id="@+id/detailProductName"
+                android:text="Product Name"
+                android:textSize="24sp"
+                android:textStyle="bold"
+                android:textColor="@android:color/black"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content" />
+
+            <!-- Price -->
+            <TextView
+                android:id="@+id/detailProductPrice"
+                android:text="RM 0.00"
+                android:textSize="18sp"
+                android:textColor="@android:color/holo_green_dark"
+                android:layout_marginTop="4dp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content" />
+
+            <!-- Description -->
+            <TextView
+                android:id="@+id/detailProductDesc"
+                android:text="Product description goes here..."
+                android:layout_marginTop="8dp"
+                android:textColor="@android:color/black"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content" />
+
+            <!-- Quantity Controls -->
+            <LinearLayout
+                android:id="@+id/quantityLayout"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:layout_gravity="center_horizontal"
+                android:layout_marginTop="16dp">
+
+                <Button
+                    android:id="@+id/btnDecrease"
+                    android:layout_width="48dp"
+                    android:layout_height="48dp"
+                    android:text="−" />
+
+                <TextView
+                    android:id="@+id/tvQuantity"
+                    android:layout_width="40dp"
+                    android:layout_height="48dp"
+                    android:gravity="center"
+                    android:text="1"
+                    android:textSize="16sp"
+                    android:background="@android:color/white"
+                    android:layout_marginHorizontal="8dp" />
+
+                <Button
+                    android:id="@+id/btnIncrease"
+                    android:layout_width="48dp"
+                    android:layout_height="48dp"
+                    android:text="+" />
+            </LinearLayout>
+
+            <!-- Add to Cart Button -->
+            <Button
+                android:id="@+id/btnAddToCart"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Add to Cart"
+                android:backgroundTint="@color/colorPrimary"
+                android:textColor="@android:color/white"
+                android:textAllCaps="false"
+                android:layout_marginTop="24dp"
+                android:elevation="4dp" />
+        </LinearLayout>
+    </ScrollView>
+
+    <!-- Floating Cart Button -->
+    <com.google.android.material.floatingactionbutton.FloatingActionButton
+        android:id="@+id/fabCart"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:src="@drawable/cart"
+        android:contentDescription="Cart"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentEnd="true"
+        android:layout_margin="16dp"
+        app:backgroundTint="@color/subhead" />
+</RelativeLayout>

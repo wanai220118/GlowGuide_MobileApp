@@ -1,0 +1,105 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:fitsSystemWindows="true"
+    android:orientation="vertical">
+
+    <!-- Toolbar -->
+    <androidx.appcompat.widget.Toolbar
+        android:id="@+id/toolbar"
+        android:layout_width="match_parent"
+        android:layout_height="?attr/actionBarSize"
+        android:background="@color/nav_bar_translucent"
+        app:title="FAQs"
+        android:titleTextColor="@color/colorPrimary"
+        app:navigationIcon="@drawable/back_arrow" />
+
+    <!-- FAQ Content -->
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:padding="20dp"
+        android:background="@color/subhead">
+
+        <LinearLayout
+            android:orientation="vertical"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <!-- Existing FAQs -->
+            <TextView android:layout_width="match_parent" android:layout_height="wrap_content"
+                android:text="Q1: How do I book a consultation?" android:textStyle="bold"
+                android:textSize="16sp" android:paddingBottom="4dp" />
+            <TextView android:layout_width="match_parent" android:layout_height="wrap_content"
+                android:text="Go to the Home page, click the '+' button, then select 'Consultation'."
+                android:paddingBottom="12dp" />
+
+            <TextView android:layout_width="match_parent" android:layout_height="wrap_content"
+                android:text="Q2: Can I edit my profile information?" android:textStyle="bold"
+                android:textSize="16sp" android:paddingBottom="4dp" />
+            <TextView android:layout_width="match_parent" android:layout_height="wrap_content"
+                android:text="Yes. Navigate to the Profile tab and click 'Edit Profile'."
+                android:paddingBottom="12dp" />
+
+            <TextView android:layout_width="match_parent" android:layout_height="wrap_content"
+                android:text="Q3: What skin types are supported?" android:textStyle="bold"
+                android:textSize="16sp" android:paddingBottom="4dp" />
+            <TextView android:layout_width="match_parent" android:layout_height="wrap_content"
+                android:text="GlowGuide supports normal, oily, dry, combination, and sensitive skin types."
+                android:paddingBottom="12dp" />
+
+            <TextView android:layout_width="match_parent" android:layout_height="wrap_content"
+                android:text="Q4: How do I delete my account?" android:textStyle="bold"
+                android:textSize="16sp" android:paddingBottom="4dp" />
+            <TextView android:layout_width="match_parent" android:layout_height="wrap_content"
+                android:text="Please contact our support team at support@glowguide.app."
+                android:paddingBottom="12dp" />
+
+            <!-- Added FAQs -->
+            <TextView android:layout_width="match_parent" android:layout_height="wrap_content"
+                android:text="Q5: How do I know my skin type?" android:textStyle="bold"
+                android:textSize="16sp" android:paddingBottom="4dp" />
+            <TextView android:layout_width="match_parent" android:layout_height="wrap_content"
+                android:text="Go to the Home page and take the Skin Type Quiz for instant results."
+                android:paddingBottom="12dp" />
+
+            <TextView android:layout_width="match_parent" android:layout_height="wrap_content"
+                android:text="Q6: Can I reschedule a consultation?" android:textStyle="bold"
+                android:textSize="16sp" android:paddingBottom="4dp" />
+            <TextView android:layout_width="match_parent" android:layout_height="wrap_content"
+                android:text="Yes! You can reschedule by clicking the button and please choose the available slots."
+                android:paddingBottom="12dp" />
+
+            <TextView android:layout_width="match_parent" android:layout_height="wrap_content"
+                android:text="Q7: Does GlowGuide support reminders?" android:textStyle="bold"
+                android:textSize="16sp" android:paddingBottom="4dp" />
+            <TextView android:layout_width="match_parent" android:layout_height="wrap_content"
+                android:text="Yes! You can set skincare reminders under the Routine section."
+                android:paddingBottom="12dp" />
+
+            <TextView android:layout_width="match_parent" android:layout_height="wrap_content"
+                android:text="Q8: Can I shop skincare products in the app?" android:textStyle="bold"
+                android:textSize="16sp" android:paddingBottom="4dp" />
+            <TextView android:layout_width="match_parent" android:layout_height="wrap_content"
+                android:text="Yes, visit the Shop tab to browse and purchase recommended products."
+                android:paddingBottom="12dp" />
+
+            <TextView android:layout_width="match_parent" android:layout_height="wrap_content"
+                android:text="Q9: Is GlowGuide free to use?" android:textStyle="bold"
+                android:textSize="16sp" android:paddingBottom="4dp" />
+            <TextView android:layout_width="match_parent" android:layout_height="wrap_content"
+                android:text="Yes, GlowGuide is completely free with no hidden charges."
+                android:paddingBottom="12dp" />
+
+            <TextView android:layout_width="match_parent" android:layout_height="wrap_content"
+                android:text="Q10: Who can I contact for help?" android:textStyle="bold"
+                android:textSize="16sp" android:paddingBottom="4dp" />
+            <TextView android:layout_width="match_parent" android:layout_height="wrap_content"
+                android:text="For any issues, please email us at support@glowguide.app."
+                android:paddingBottom="12dp" />
+        </LinearLayout>
+    </ScrollView>
+</LinearLayout>

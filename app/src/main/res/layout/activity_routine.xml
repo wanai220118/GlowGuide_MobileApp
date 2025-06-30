@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:fitsSystemWindows="true"
+    android:background="@color/subhead">
+
+    <!-- Toolbar -->
+    <androidx.appcompat.widget.Toolbar
+        android:id="@+id/toolbar"
+        android:layout_width="match_parent"
+        android:layout_height="?attr/actionBarSize"
+        android:background="@color/nav_bar_translucent"
+        app:title="My Routine"
+        android:titleTextColor="@color/colorPrimary"
+        app:navigationIcon="@drawable/back_arrow" />
+
+    <!-- RecyclerView -->
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/reminderRecyclerView"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:padding="16dp"
+        android:clipToPadding="false"
+        android:layout_below="@id/toolbar"
+        android:visibility="visible" />
+
+    <!-- Empty State Text -->
+    <TextView
+        android:id="@+id/emptyStateText"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="You have no reminders yet."
+        android:textSize="16sp"
+        android:textColor="@android:color/darker_gray"
+        android:gravity="center"
+        android:layout_below="@id/toolbar"
+        android:layout_marginTop="40dp"
+        android:visibility="gone" />
+
+    <!-- Static Info Content -->
+    <ScrollView
+        android:id="@+id/staticInfoScroll"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/emptyStateText"
+        android:padding="20dp"
+        android:visibility="gone"
+        android:background="@android:color/white">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="This is where your skincare routine or reminders will appear."
+                android:textSize="16sp"
+                android:textColor="#444"
+                android:lineSpacingExtra="6dp" />
+        </LinearLayout>
+    </ScrollView>
+</RelativeLayout>
