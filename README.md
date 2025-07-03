@@ -18,7 +18,10 @@ An Android mobile application designed to deliver personalized skincare guidance
 
 ## 🎥 Demonstration
 
-> 🔗 Coming soon — a walkthrough video showcasing onboarding, consultation booking, shopping flow, and reminders in action.
+This folder contains the demonstration for the GlowGuide Mobile App.
+
+> 🔗 [Click here to watch the video on YouTube](https://youtu.be/BB_3NAu6uUw
+)
 
 ---
 
