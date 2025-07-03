@@ -95,7 +95,7 @@ public class AddReminderActivity extends AppCompatActivity {
                     .add(reminder)
 
                     .addOnSuccessListener(documentReference -> {
-                        Toast.makeText(this, "Reminder saved to Firestore!", Toast.LENGTH_SHORT).show();
+                        Toast.makeText(this, "Reminder saved!", Toast.LENGTH_SHORT).show();
 
                         Calendar alarmCalendar = Calendar.getInstance();
                         alarmCalendar.set(Calendar.HOUR_OF_DAY, hour);
